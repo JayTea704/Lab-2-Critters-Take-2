@@ -1,11 +1,9 @@
-// CSE 142 Homework 9 (Critters)
-// Authors: Stuart Reges and Marty Stepp
-//          modified by Kyle Thayer
-//
-// CritterMain provides the main method for a simple simulation program.  Alter
-// the number of each critter added to the simulation if you want to experiment
-// with different scenarios.  You can also alter the width and height passed to
-// the CritterFrame constructor.
+// John Bedlington and Michael Woo
+// CS 145
+// Lab 2: Critters
+// This program creates different types of Critters, each with their own traits that may benefit or harm them.
+// In this survival of the fittest simulator all the critters are pitted against each other in an enclosed area
+// to see who is the strongest of them all.
 
 public class CritterMain {
     public static void main(String[] args) {
