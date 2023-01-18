@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Orca extends Critter{
+public class JohnB extends Critter{
     // Decides what Color critter will be.
     public Color getColor(){
         return Color.PINK;
