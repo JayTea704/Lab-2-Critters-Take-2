@@ -3,12 +3,13 @@
 import java.awt.*;
 
 public class Lion extends Critter { // creates the Lion class
-    //intitialize variables
+    //initialize variables
     private int counter;
     private Color initialColor;
     
     public Lion() { //start counter at 0
-        this.counter = 0;
+        counter = 0;
+
     }
     
     public Action getMove(CritterInfo info) { // tells the lion actions and behavior
@@ -25,12 +26,12 @@ public class Lion extends Critter { // creates the Lion class
             return Action.HOP;
         }
     }
-    
+    //Returns character that represent the critter.
     public String toString() {
         return "L";
     }
-    
-    public Color getColor() { // sets color of lion
+    // sets color of lion
+    public Color getColor() {
         this.counter = this.counter + 1;
         if ((this.counter - 1) % 3 == 0) { // checks if the lion needs to change color
             Color randomColor = getRandomColor();
@@ -40,8 +41,8 @@ public class Lion extends Critter { // creates the Lion class
             return this.initialColor;
         }
     }
-    
-    private Color getRandomColor() { // gets random color based off Math.random
+    // gets random color based off Math.random
+    private Color getRandomColor() {
         double number = Math.random();
         if (number < (1.0 / 3)) {
             return Color.RED;

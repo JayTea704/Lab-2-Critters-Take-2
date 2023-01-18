@@ -1,28 +1,18 @@
 import java.awt.*;
 
 public class Orca extends Critter{
-
-
-    private Direction face;
-    private boolean count;
-
-
-
-    public Orca () {
-        face = Direction.EAST;
-        count = true;
-    }
-
+    // Decides what Color critter will be.
     public Color getColor(){
-        return Color.BLUE;
+        return Color.PINK;
     }
-
+    // Returns characters that represent critter.
     public String toString(){
 
         return ">--:)";
 
     }
 
+    // Returns where critter will go and what it will do. Unique because if it sees another enemy it will turn the direction it sees the enemy.
     public Action getMove(CritterInfo info){
             if( info.getFront() == Neighbor.OTHER){
                 return Action.INFECT;
